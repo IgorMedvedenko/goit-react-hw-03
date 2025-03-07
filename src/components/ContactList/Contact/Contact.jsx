@@ -7,12 +7,12 @@ export default function Contact({ id, name, number, onDeleteContact }) {
   return (
     <li className={styles.item}>
       <p className={styles.text}>
-        <div className={styles.contHolder}>
+        <span className={styles.contHolder}>
           <RiUserAddFill className={styles.icon} /> {name}
-        </div>
-        <div className={styles.contHolder}>
+        </span>
+        <span className={styles.contHolder}>
           <PiPhoneFill className={styles.icon} /> {number}
-        </div>
+        </span>
       </p>
       <button
         type="button"
