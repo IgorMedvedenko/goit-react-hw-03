@@ -10,8 +10,14 @@ export default function ContactForm({ onAddContact }) {
   };
 
   const validationSchema = Yup.object({
-    name: Yup.string().min(3).max(50).required("Required"),
-    number: Yup.string().min(3).max(50).required("Required"),
+    name: Yup.string()
+      .min(3, "must be at least 3 characters long")
+      .max(50)
+      .required("Required"),
+    number: Yup.string()
+      .min(3, "must be at least 3 characters long")
+      .max(50)
+      .required("Required"),
   });
 
   const handleSubmit = (values, { resetForm }) => {
