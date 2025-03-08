@@ -30,4 +30,11 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: #38833c;
+  transform: scale(1.15);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+  color: #66d586;
 }
